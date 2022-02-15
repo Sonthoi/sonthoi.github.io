@@ -17,23 +17,6 @@ class Sonthoi {
 
       blocks: [
         {
-          opcode: 'isExactly',
-
-          blockType: Scratch.BlockType.BOOLEAN,
-
-          text: 'is [A] exactly [B]?',
-          arguments: {
-            A: {
-              type: Scratch.ArgumentType.STRING,
-              defaultValue: 'apple'
-            },
-            B: {
-              type: Scratch.ArgumentType.STRING,
-              defaultValue: 'APPLE'
-            }
-          }
-        },
-        {
           opcode: 'isLessOrEqual',
 
           blockType: Scratch.BlockType.BOOLEAN,
@@ -93,26 +76,6 @@ class Sonthoi {
           text: 'pi'
         },
         {
-          opcode: 'ternaryOperator',
-
-          blockType: Scratch.BlockType.REPORTER,
-
-          text: 'if [A] then [B] else [C]',
-          arguments: {
-            A: {
-              type: Scratch.ArgumentType.BOOLEAN
-            },
-            B: {
-              type: Scratch.ArgumentType.STRING,
-              defaultValue: 'banana'
-            },
-            C: {
-              type: Scratch.ArgumentType.STRING,
-              defaultValue: 'apple'
-            }
-          }
-        },
-        {
           opcode: 'letters',
 
           blockType: Scratch.BlockType.REPORTER,
@@ -137,36 +100,6 @@ class Sonthoi {
           opcode: 'currentMillisecond',
           blockType: Scratch.BlockType.REPORTER,
           text: 'current millisecond'
-        },
-        {
-          opcode: 'fetchFrom',
-
-          blockType: Scratch.BlockType.REPORTER,
-
-          text: 'get content from [URL]',
-          arguments: {
-            URL: {
-              type: Scratch.ArgumentType.STRING,
-              defaultValue: 'https://translate-service.scratch.mit.edu/translate?language=eo&text=hello'
-            }
-          }
-        },
-        {
-          opcode: 'parseJSON',
-
-          blockType: Scratch.BlockType.REPORTER,
-
-          text: '[PATH] of [JSON_STRING]',
-          arguments: {
-            PATH: {
-              type: Scratch.ArgumentType.STRING,
-              defaultValue: 'fruit/apples'
-            },
-            JSON_STRING: {
-              type: Scratch.ArgumentType.STRING,
-              defaultValue: '{"fruit": {"apples": 2, "bananas": 3}, "total_fruit": 5}'
-            }
-          }
         },
         {
           opcode: 'stringToBoolean',
