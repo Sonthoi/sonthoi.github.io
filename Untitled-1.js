@@ -76,11 +76,11 @@ class Sonthoi {
           text: 'false'
         },
         {
-          opcode: 'exponent',
+          opcode: 'whenEqualTo',
 
           blockType: Scratch.BlockType.REPORTER,
 
-          text: '[A] √ [B]',
+          text: 'when [A] = [B]',
           arguments: {
             A: {
               type: Scratch.ArgumentType.NUMBER
@@ -229,8 +229,8 @@ class Sonthoi {
     return false;
   }
 
-  exponent({A, B}) {
-    return Math.root(A, B);
+  whenEqualTo({A, B}) {
+    return A = B;
   }
 
   pi() {
