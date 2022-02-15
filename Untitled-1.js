@@ -78,7 +78,7 @@ class Sonthoi {
         {
           opcode: 'reportValue',
 
-          blockType: Scratch.BlockType.STACK,
+          blockType: Scratch.BlockType.STACKED,
 
           text: 'report [STRING]',
           arguments: {
