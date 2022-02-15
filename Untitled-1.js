@@ -78,7 +78,7 @@ class Sonthoi {
         {
           opcode: 'reportValue',
 
-          blockType: Scratch.BlockType.BLOCK,
+          blockType: Scratch.BlockType.HAT,
 
           text: 'report [STRING]',
           arguments: {
@@ -227,7 +227,7 @@ class Sonthoi {
   }
 
   reportValue({STRING}) {
-    return STRING;
+    return STRING
   }
 
   pi() {
