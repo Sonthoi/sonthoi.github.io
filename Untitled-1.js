@@ -76,17 +76,14 @@ class Sonthoi {
           text: 'false'
         },
         {
-          opcode: 'whenEqualTo',
+          opcode: 'reportValue',
 
-          blockType: Scratch.BlockType.REPORTER,
+          blockType: Scratch.BlockType.BLOCK,
 
-          text: 'when [A] = [B]',
+          text: 'report [STRING]',
           arguments: {
-            A: {
-              type: Scratch.ArgumentType.NUMBER
-            },
-            B: {
-              type: Scratch.ArgumentType.NUMBER
+            STRING: {
+              type: Scratch.ArgumentType.BOOLEAN
             }
           }
         },
@@ -229,8 +226,8 @@ class Sonthoi {
     return false;
   }
 
-  whenEqualTo({A, B}) {
-    return A = B;
+  reportValue({STRING}) {
+    return STRING;
   }
 
   pi() {
