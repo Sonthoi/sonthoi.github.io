@@ -17,38 +17,6 @@ class Sonthoi {
 
       blocks: [
         {
-          opcode: 'isLessOrEqual',
-
-          blockType: Scratch.BlockType.BOOLEAN,
-
-          text: '[A] <= [B]',
-          arguments: {
-            A: {
-              type: Scratch.ArgumentType.NUMBER
-            },
-            B: {
-              type: Scratch.ArgumentType.NUMBER,
-              defaultValue: 50
-            }
-          }
-        },
-        {
-          opcode: 'isMoreOrEqual',
-
-          blockType: Scratch.BlockType.BOOLEAN,
-
-          text: '[A] >= [B]',
-          arguments: {
-            A: {
-              type: Scratch.ArgumentType.NUMBER
-            },
-            B: {
-              type: Scratch.ArgumentType.NUMBER,
-              defaultValue: 50
-            }
-          }
-        },
-        {
           opcode: 'trueBlock',
           blockType: Scratch.BlockType.BOOLEAN,
           text: 'true'
@@ -60,20 +28,14 @@ class Sonthoi {
         },
         {
           opcode: 'reportValue',
+          blockType: Scratch.BlockType.COMMAND,
 
-          blockType: Scratch.BlockType.BOOLEAN,
-
-          text: 'report [STRING]',
+          text: 'report value [STRING]',
           arguments: {
             STRING: {
               type: Scratch.ArgumentType.BOOLEAN
             }
           }
-        },
-        {
-          opcode: 'pi',
-          blockType: Scratch.BlockType.REPORTER,
-          text: 'pi'
         },
         {
           opcode: 'letters',
@@ -93,24 +55,6 @@ class Sonthoi {
             STRING: {
               type: Scratch.ArgumentType.STRING,
               defaultValue: 'red apple'
-            }
-          }
-        },
-        {
-          opcode: 'currentMillisecond',
-          blockType: Scratch.BlockType.REPORTER,
-          text: 'current millisecond'
-        },
-        {
-          opcode: 'stringToBoolean',
-
-          blockType: Scratch.BlockType.BOOLEAN,
-
-          text: '[STRING]',
-          arguments: {
-            STRING: {
-              type: Scratch.ArgumentType.STRING,
-              defaultValue: 'true'
             }
           }
         },
