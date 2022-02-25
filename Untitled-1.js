@@ -26,12 +26,18 @@ class Sonthoi {
               type: Scratch.ArgumentType.STRING
             }
           }
+        },
+        {
+          opcode: 'value',
+          blockType: Scratch.BlockType.REPORTER,
+          text: 'value'
         }
       ]
     }
   }
 
-  reportValue({STRING}) {
+  reportValue({STRING})
+  value() {
     return STRING
   }
 }
